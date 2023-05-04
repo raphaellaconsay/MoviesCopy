@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Award]
+(
+    [Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Name] NVARCHAR(50) NOT NULL, 
+    [Year] INT NOT NULL, 
+    [MovieId] INT NOT NULL, 
+    CONSTRAINT [FK_Award_Movie] FOREIGN KEY ([MovieId]) REFERENCES [Movie]([Id]) ON DELETE CASCADE ON UPDATE CASCADE
+
+)

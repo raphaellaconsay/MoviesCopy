@@ -1,0 +1,5 @@
+﻿CREATE PROCEDURE [dbo].[temp]	
+AS
+BEGIN
+RETURN 0
+END
